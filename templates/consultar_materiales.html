@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<section class="main-2">
+    <div class="titulo" class="pie">    
+        <h2 style="text-align:center"> Consulta de Materiales</h2>
+
+        <p>Esta aplicación permite consultar algun amterial en particular y poder visualizar que
+        cantidad tenemos en stock. Se debera introducir el "Código Interno" del producto a buscar</p>
+        <p></p>
+        <form method = "POST" action="{{url_for('consultar_materiales')}}">
+            <label>Código Interno</label><br>
+            <input type="number" min='0' max='9999' name="codigo interno" required="required"/>
+            <button type="submit" class="btn btn-primary " class="btn btn-primary btn-block">Consultar </button>
+        </form> 
+
+    </div>
+</section>
+
+<p></p>
+
+{% if accion == "Consultar" %}
+
+<section class="main-2">
+    <div class="titulo" class="pie">    
+        <header>
+        
+            {% if data == [] %}
+                <table class="table table-striped table-bordered bg-white ">
+                    <thead cellpadding="1.0" cellspacing="1.0">
+                    <tr>
+                        <th>Código Interno</th>            
+                        <th>Stock Total</th>
+                        <th>Descripción</th>
+                    </tr>
+        
+            
+                    <tr>
+                        <td>{{codigo}}</td>
+                        <td></td>
+                        <td>Este código no esta cargado en sistema</td>
+                    </tr>
+                    </thead>
+                </table>
+                
+                <p></p>
+                
+                <form method = "GET" action="{{url_for('agregar', codigo_a=codigo)}}">
+                    <button type="submit" class="btn btn-primary " class="btn btn-primary btn-block">Agregar Material </button>
+                </form>
+                
+                {%else%}
+                <table class="table table-striped table-bordered bg-white ">
+                    <thead cellpadding="1.0" cellspacing="1.0">
+                    <tr>
+                        <th>Código Interno</th>            
+                        <th>Stock Total</th>
+                        <th>Descripción</th>
+                        <th>Modificar</th>
+                    </tr>
+    
+                    {% for row in data %}
+                        <tr>
+                            <td>{{row['codigo interno']}}</td>
+                            <td>{{row['cantidad en stock']}}</td>
+                            <td>{{row['descripcion']}}</td>
+                            <td><b><a href="{{url_for('modificar_material', codigo=row['codigo interno'])}}" >Modifcar</a></b></td>
+                        </tr>
+                    {% endfor %}
+                    </thead>
+                </table>
+                
+             {% endif %}
+        </header>
+    </div>
+</section>
+
+{% endif %}
+
+{% endblock %}

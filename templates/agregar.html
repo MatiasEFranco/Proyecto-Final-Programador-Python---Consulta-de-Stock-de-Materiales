@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class=row id='message_row'> 
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  {% for message in messages %}
+      <div class="alert alert-success alert-dismissible fade show" role="alert" id="message" >
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+</div>
+
+{% if cargado == "no" %}
+<section class="main-2">
+  <div class="titulo" class="pie">
+
+    <a><h2>Material a cargar en sistema</h2></a>
+    
+    <p>Aquí se puede agregar nuevo material al sistema, se debera intriducir el "Código Interno" del nuevo producto, la "Cantidad" que
+    tendrá en stock y una breve "Descripción" del producto</p>
+    
+    {% if codigo_a != 11111 %}   
+      <form method = "POST" action="{{url_for('agregar', codigo_a=codigo_a)}}">
+            <label>Código Interno:</label><br>
+            <input type="number" min='0' max='9999' name="codigo interno"  value={{codigo_a}}><br>   
+            <label>Cantidad:</label><br>
+            <input type="number" min='0' max='9999' name="cantidad" required="required"/><br> 
+            <label>Descripción:</label><br>
+            <input type="name" name="descripcion" required="required"/></b>
+            <p></p>
+            <button type="submit" class="btn btn-primary " class="btn btn-primary btn-block">Cargar </button>
+        </form>
+    {% endif %}
+
+    {% if codigo_a == 11111 %}   
+    <form method = "POST" action="{{url_for('agregar', codigo_a=codigo_a)}}">
+          <label>Código Interno:</label><br>
+          <input type="number" min='0' max='9999' name="codigo interno" required="required"/><br>   
+          <label>Cantidad:</label><br>
+          <input type="number" min='0' max='9999' name="cantidad" required="required"/><br> 
+          <label>Descripción:</label><br>
+          <input type="name" name="descripcion" required="required"/></b>
+          <p></p>
+          <button type="submit" class="btn btn-primary " class="btn btn-primary btn-block">Cargar </button>
+      </form>
+  {% endif %}
+
+  </div>
+</section>
+{% endif %}
+
+{% if cargado == "si" %}
+
+  <section class="main-2">
+    <div class="titulo" class="pie">
+
+      <h2>Material Cargado en Sistema</h2>
+
+      <p></p>
+
+      <form method = "GET" action="{{url_for('agregar', codigo_a=11111)}}">
+        <button type="submit" class="btn btn-primary " class="btn btn-primary btn-block">Cargar otro Material </button>
+      </form>
+
+    </div>
+  </section>
+
+{% endif %}
+
+{% endblock %}

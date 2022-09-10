@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<section class="main-2">
+    <div class="titulo" class="pie">
+
+        <h1>Que consulta desea realizar:</h1>
+
+        <form action="{{url_for('consultar_el_stock_total', estado='no_mostrar')}}">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Stock / Busqueda / Agregar / Modificar / Borrar</button>
+        </form> 
+        <p></p>
+        <form action="{{url_for('consultar_materiales')}}">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Consultar Materiales</button>
+        </form> 
+        <p></p>
+        <form method = "GET" action="{{url_for('agregar', codigo_a=11111)}}">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Agregar Material al Stock</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

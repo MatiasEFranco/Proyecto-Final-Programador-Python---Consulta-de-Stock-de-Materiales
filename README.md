@@ -36,34 +36,34 @@ En esta pagina aparecera una breve descripcion de lo que se podra realizar en la
 ![stock-busqueda-modificar-borrar](/Imagenes/stock-busqueda-modificar-borrar.jpg)
 
 Ejemplo: con el boton de Ver y ocultar el stock se puede desplegar la planilla del stock total o se puede ocultarla
-![ver stock](/Imagenes/ver stock.jpg)
+![ver stock](Imagenes/ver stock.jpg)
 
 Ejemplo: se puede realizar la busqueda de un material con el **Código Interno**, si el amterial esta en el stock aparecera una planilla con la informacion y ademas se podra **Modificar** o **Borrar** el material.
 ![busqueda modifcar borrar](/busqueda modifcar borrar.jpg)
 
 Ejemplo: si se realiza una busqueda y el material no esta cargado en la planilla, el mismo se podra agregar al stock
-![busqueda agregar](/busqueda agregar.jpg)
+![busqueda agregar](Imagenes/busqueda agregar.jpg)
 
 ## Boton **CONSULTAR MATERIALES**
 En esta pagina aparecera una breve descripcion de lo que se podra realizar en la misma, podremos realizar la consulta de los materiales cargados en stock mediante el Codigo Interno del mismo. Si el material esta en stock aparecera una tabla con su informacion, y un boton que nos permitira realizar modificaciones sobre el mismo. Si el material no esta en el stock, podremos agregarlo al mismo.
 
 Ejemplo: el material esta en stock
-![consulta materiales-a](/consulta materiales-a.jpg)
+![consulta materiales-a](Imagenes/consulta materiales-a.jpg)
 
 Ejemplo: el material no esta en stock
-![consulta materiales-b](/consulta materiales-b.jpg)
+![consulta materiales-b](Imagenes/consulta materiales-b.jpg)
 
 ## Boton **AGREGAR MATERIAL AL STOCK**
 En esta pagina aparecera una breve descripcion de lo que se podra realizar en la misma, y podremos cargar nuevos materiales al stock. Tendremos que colocar el **Código Interno** del material, la **Cantidad de Stock** y una breve **Descripcion** del mismo. Si el Codigo Interno ya existe en el sistema nos saldra un mensaje indicandonos.
 
-![agregar material](/agregar material.jpg)
+![agregar material](Imagenes/agregar material.jpg)
 
 Ejemplo: se agrega un nuevo material al stock
-![agregar material-a](/agregar material-a.jpg)
-![agregar material-b](/agregar material-b.jpg)
+![agregar material-a](Imagenes/agregar material-a.jpg)
+![agregar material-b](Imagenes/agregar material-b.jpg)
 
 Ejemplo: se agrega un nuevo material al stock pero el Codigo Interno ya existe
-![agregar material-c](/agregar material-c.jpg)
+![agregar material-c](Imagenes/agregar material-c.jpg)
 
 ### Submenu **AGREGAR MATERIAL AL STOCK**: 
 En esta pagina aparecera una breve descripcion de lo que se podra realizar en la misma, y podremos cargar nuevos materiales al stock. Tendremos que colocar el **Código Interno** del material, la **Cantidad de Stock** y una breve **Descripcion** del mismo. Si el Codigo Interno ya existe en el sistema nos saldra un mensaje indicandonos. Esto tambien esta erxplicado con ejemplos en el punto anterior. 
@@ -72,9 +72,9 @@ En esta pagina aparecera una breve descripcion de lo que se podra realizar en la
 En esta pagina podremos realizar la eliminacion de los materiales directamente, colocando el Código Interno del material se podra eliminarlo directamente. Si el material no esta cargado en sistema se indicara con un mensaje.
 
 Ejemplo: el material esta cargado en el sistema
-![Borrar-a](/agregar material-c.jpg)
+![Borrar-a](Imagenes/agregar material-c.jpg)
 
 
 Ejemplo: el material no esta cargado en el sistema
-![Borrar-b](/agregar material-c.jpg)
+![Borrar-b](Imagenes/agregar material-c.jpg)
 

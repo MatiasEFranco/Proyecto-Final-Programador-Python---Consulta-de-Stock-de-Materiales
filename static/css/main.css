@@ -56,25 +56,6 @@ body{
     background-color: #ddd;
     color: black;
   }
-/* cliente.html */
-
-#tabla_cliente_info{
-    margin-top: 10px;
-  }
-
-#card_cliente_info{
-    margin-top: 50px;
-}  
-
- /*stock.html */
-
-#card_stock2, #card_stock3{
-    margin-top: 50px;
-} 
-
-#card_stock1{
-    margin-top: 68px;
-}
 
 #message{
     

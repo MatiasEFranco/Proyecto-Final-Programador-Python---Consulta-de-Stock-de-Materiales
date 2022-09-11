@@ -12,7 +12,7 @@ Abajo hay una breve descripcion de la planilla que se utilizara y la base de dat
 ### Planilla **stock.csv**: 
 En esta planilla tenemos la informacion de los materiales que contamos en stock y el dato de las cantidades que hay en stock de cada material con una breve descripcion del material. Esta planilla contiene una columna que se llama **Código Interno** propio del amterial, tro columna que se llama **Cantidad de Stock** la cual indica que cantidad tenemos de ese material y una ultima columna que se llama **Descripción** en donde hay una breve descripción del material. Esta planilla stock.csv es la que se carga en la Base de Datos del programa.
 
-![stock.csv](/Imagenes/stock.csv.jpg)
+![stock](/Imagenes/stock.jpg)
 
 ### Base de Datos **stock**: 
 Esta es la Base de Datos que se genera la primera vez que se ejecuta el programa y se envia un endpoint por el servidor. En esta Base de Datos **stock** se carga la informacion que se encuentra en la plnailla **stock.csv** y todas las cciones del programa se realizan sobre esta Base de Datos. 

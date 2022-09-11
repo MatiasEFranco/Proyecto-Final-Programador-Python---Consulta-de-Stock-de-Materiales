@@ -72,9 +72,9 @@ En esta pagina aparecera una breve descripcion de lo que se podra realizar en la
 En esta pagina podremos realizar la eliminacion de los materiales directamente, colocando el Código Interno del material se podra eliminarlo directamente. Si el material no esta cargado en sistema se indicara con un mensaje.
 
 Ejemplo: el material esta cargado en el sistema
-![Borrar-a](/Imagenes/Imagenes/BorrarA.jpg)
+![Borrar-a](/Imagenes/BorrarA.jpg)
 
 
 Ejemplo: el material no esta cargado en el sistema
-![Borrar-b](/Imagenes/Imagenes/BorrarB.jpg)
+![Borrar-b](/Imagenes/BorrarB.jpg)
 
